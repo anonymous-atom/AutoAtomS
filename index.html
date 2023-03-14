@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>API Test</title>
-</head>
-<body>
-    <form method="POST">
-        <label for="user_input">Enter your input:</label>
-        <input type="text" name="user_input">
-        <button type="submit">Submit</button>
+  <head>
+    <title>Input</title>
+  </head>
+  <body>
+    <form method="POST" action="/">
+      <label for="prompt">Enter a prompt:</label>
+        <textarea name="prompt" id="prompt"></textarea>
+      <button type="submit">Generate Response</button>
     </form>
-    {% if result %}
-        <hr>
-        <h2>Result:</h2>
-        <p>{{ result }}</p>
-    {% endif %}
-</body>
+  </body>
 </html>
