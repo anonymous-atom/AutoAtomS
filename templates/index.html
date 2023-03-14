@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="user_input">Enter your input:</label>
+        <textarea name="user_input" rows="10" cols="50"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    {% if result %}
+        <hr>
+        <h2>Result:</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
