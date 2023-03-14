@@ -11,6 +11,7 @@ app.template_folder = os.path.abspath('templates')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    result = ''
     if request.method == 'POST':
         # Get the user's input from the form
         user_input = request.form['user_input']
